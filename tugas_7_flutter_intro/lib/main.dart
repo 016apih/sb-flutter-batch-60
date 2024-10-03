@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_7_flutter_intro/materi/materialAppScaffold.dart';
 import 'package:tugas_7_flutter_intro/tugas-7-flutter-info/counter_app.dart';
 import 'package:tugas_7_flutter_intro/tugas-8/news_page.dart';
 
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Tugas - 7 Counter Apps'),
-      initialRoute: "/tugas8",
+      initialRoute: "/home",
       routes: {
-        "/": (context) => const MyHomePage(title: 'Tugas - 7 Counter Apps'),
+        "/home": (context) => HomePageNew(),
         "/tugas7": (context) => const MyHomePage(title: 'Tugas - 7 Counter Apps'),
         "/tugas8": (context) => const NewsPage(),
       }
