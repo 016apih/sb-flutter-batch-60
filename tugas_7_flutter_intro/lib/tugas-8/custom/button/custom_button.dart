@@ -7,10 +7,12 @@ class CustomButton extends StatelessWidget {
     required this.btnColor,
     required this.textColor,
     required this.btnText,
+    this.onTap,
   });
   final Color btnColor;
   final String btnText;
   final Color textColor;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +22,12 @@ class CustomButton extends StatelessWidget {
         width: double.infinity,
         height: 52,
         child: ElevatedButton(
-          onPressed: (){},
+          onPressed: onTap,
           style: ElevatedButton.styleFrom(
             backgroundColor: btnColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
-              side: BorderSide(
+              side: const BorderSide(
                 color: Colors.blue,
                 width: 1
               )

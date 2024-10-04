@@ -35,16 +35,20 @@ class NewsPage extends StatelessWidget{
                 style: TextStyle(fontSize: 15),
               ),
               const Spacer(),
-              const CustomButton(
+              CustomButton(
                 btnColor: Colors.blue,
                 textColor: Colors.white,
-                btnText: "Masuk"
+                btnText: "Masuk",
+                onTap: (){
+                  Navigator.pushNamed(context, '/tugas10');
+                },
               ),
               const SizedBox(height: 21),
-              const CustomButton(
+              CustomButton(
                 btnColor: Colors.white,
                 textColor: Colors.blue,
-                btnText: "Mendaftar"
+                btnText: "Mendaftar",
+                onTap: (){},
               ),
             ],
           ),

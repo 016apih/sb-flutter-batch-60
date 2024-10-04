@@ -58,3 +58,13 @@ Jenis-Jenis GridView:
    GridView.custom => custom penuh
       - gridDelegate: Menentukan bagaimana item dalam grid harus diatur. Biasanya menggunakan SliverGridDelegateWithFixedCrossAxisCount atau SliverGridDelegateWithMaxCrossAxisExtent.
       - childrenDelegate: Delegasi yang membangun widget untuk grid.
+ - Navigatir flutter
+   - navigator => object yg mengelola tumpukan (stack) dari object route
+   - navigator.push() => menambahkan halaman baru ke dalam tumpukan navigasi
+   - navigator.pop() => ,enutup halaman saat ini dan kembali ke halaman sebelumnya dalam tumpukan navigasi
+   - navigator.pushReplacement() => menambahkan halaman baru dan menggantikan halaman saat ini dalam tumpukan navigasi
+   - Navigator.pushAndRemoveUntil => menambahkan halaman baru dan menghapus semua halaman di atas halaman tujuan dari tumpukan navigasi
+   - Navigatore.pushNamed(context, '/detail') => melakukan navigasi ke halaman '/detail' & Navigator.pop(context) untuk kembali
+   - Kenapa Named Routes:
+     - keterbacaan & pemeliharaan: karena di definisikan secara eksplisit
+     - fleksibilitas: mudah untuk mengubah dan memanipulasi nabigasi tanpa mengubah implementasi di banyak bagian
