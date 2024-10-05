@@ -63,19 +63,6 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    # - assets/images/news_page.png
-    # - assets/images/menu.png
-    # - assets/images/news1.png
-    # - assets/images/news2.png
-    # - assets/images/news3.png
-    # - assets/images/news4.png
-    # - assets/images/news5.png
-    # - assets/images/news6.png
-    # - assets/images/avatar.png
-    # - assets/images/arrow-forward-circle-outline.png
-    # - assets/images/chatbubble-ellipses-outline.png
-    # - assets/images/bookmark-outline.png
-    # - assets/images/arrow-redo-outline.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -87,6 +74,12 @@ flutter:
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
+  fonts:
+    - family: Telegraf
+      fonts:
+        - asset: assets/fonts/Telegraf UltraBold 800.otf
+        - asset: assets/fonts/Telegraf UltraLight 200.otf
+        - asset: assets/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.otf
   # example:
   # fonts:
   #   - family: Schyler

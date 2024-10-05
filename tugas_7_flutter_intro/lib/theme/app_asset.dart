@@ -14,4 +14,6 @@ class AppAsset {
   static const icChat = '$baseIcon/chatbubble-ellipses-outline.png';
   static const icMenu = '$baseIcon/menu.png';
   static const icAvatar = '$baseIcon/avatar.png';
+  static const icSearch = '$baseIcon/search.png';
+  
 }
