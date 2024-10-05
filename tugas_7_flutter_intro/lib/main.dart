@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_7_flutter_intro/materi/materialAppScaffold.dart';
+import 'package:tugas_7_flutter_intro/quiz-2/settings.dart';
 import 'package:tugas_7_flutter_intro/tugas-7-flutter-info/counter_app.dart';
 import 'package:tugas_7_flutter_intro/tugas-8/news_page.dart';
 import 'package:tugas_7_flutter_intro/tugas-9/detail_news_app.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         "/tugas9": (context) => const NewsApp(),
         "/tugas9Detail": (context) => const DetailNewsApp(),
         "/tugas10": (context) => const BottomNavbar(),
+        "/quiz2": (context) => const Settings(),
       }
     );
   }

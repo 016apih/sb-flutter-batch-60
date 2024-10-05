@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 
 class Herocard extends StatelessWidget {
   const Herocard({
@@ -23,7 +24,7 @@ class Herocard extends StatelessWidget {
       height: 311,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/$img'), // Lokasi gambar
+          image: AssetImage(img), // Lokasi gambar
           fit: BoxFit.cover,
           opacity: 63 // Menyesuaikan ukuran gambar dengan container
         ),
@@ -59,7 +60,7 @@ class Herocard extends StatelessWidget {
                 height: 24,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/chatbubble-ellipses-outline.png")
+                    image: AssetImage(AppAsset.icChat)
                   ),
                 ),
               ),
@@ -69,7 +70,7 @@ class Herocard extends StatelessWidget {
                 height: 24,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/bookmark-outline.png")
+                    image: AssetImage(AppAsset.icBookmark)
                   ),
                 ),
               ),
@@ -79,7 +80,7 @@ class Herocard extends StatelessWidget {
                 height: 24,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/arrow-redo-outline.png")
+                    image: AssetImage(AppAsset.icArrow)
                   ),
                 ),
               ),

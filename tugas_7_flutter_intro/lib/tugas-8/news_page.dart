@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 import 'package:tugas_7_flutter_intro/tugas-8/custom/button/custom_button.dart';
 
 class NewsPage extends StatelessWidget{
@@ -19,7 +20,7 @@ class NewsPage extends StatelessWidget{
                 height: 200,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/news_page.png")
+                    image: AssetImage(AppAsset.news)
                   ),
                 ),
               ),

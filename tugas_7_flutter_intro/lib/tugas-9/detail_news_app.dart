@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 
 class DetailNewsApp extends StatelessWidget {
   const DetailNewsApp({
@@ -18,7 +19,7 @@ class DetailNewsApp extends StatelessWidget {
                 height: 375,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/news6.png'), // Lokasi gambar
+                    image: AssetImage(AppAsset.news6), // Lokasi gambar
                     fit: BoxFit.cover,
                     opacity: 63 // Menyesuaikan ukuran gambar dengan container
                   ),
@@ -75,7 +76,7 @@ class DetailNewsApp extends StatelessWidget {
                             height: 40,
                             decoration: BoxDecoration(
                               image: const DecorationImage(
-                                image: AssetImage('assets/images/avatar.png'), // Lokasi gambar
+                                image: AssetImage(AppAsset.icAvatar), // Lokasi gambar
                                 fit: BoxFit.contain,
                               ),
                               borderRadius: BorderRadius.circular(20),

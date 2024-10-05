@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 import 'package:tugas_7_flutter_intro/tugas-9/card/heroCard.dart';
 import 'package:tugas_7_flutter_intro/tugas-9/card/latestCard.dart';
 
@@ -24,7 +25,7 @@ class NewsApp extends StatelessWidget {
                       height: 40,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("assets/images/menu.png")
+                          image: AssetImage(AppAsset.icMenu)
                         ),
                       ),
                     ),
@@ -46,14 +47,14 @@ class NewsApp extends StatelessWidget {
                         category: "TECHNOLOGY",
                         time: "3 min ago",
                         title: "Microsoft launches a deepfake detector tool ahead of US election",
-                        img: "news1.png",
+                        img: AppAsset.news1,
                       ),
                       SizedBox(width: 20),
                       Herocard(
                         category: "TECHNOLOGY",
                         time: "5 min ago",
                         title: "image ke dua",
-                        img: "news2.png",
+                        img: AppAsset.news2,
                       ),
                     ],
                   )
@@ -71,7 +72,7 @@ class NewsApp extends StatelessWidget {
                       height: 16,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("assets/images/arrow-forward-circle-outline.png")
+                          image: AssetImage(AppAsset.icArrow)
                         ),
                       ),
                     ),
