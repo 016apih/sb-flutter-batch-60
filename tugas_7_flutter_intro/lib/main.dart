@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_7_flutter_intro/materi/materialAppScaffold.dart';
 import 'package:tugas_7_flutter_intro/quiz-2/settings.dart';
+import 'package:tugas_7_flutter_intro/tugas-11/list_user.dart';
 import 'package:tugas_7_flutter_intro/tugas-7-flutter-info/counter_app.dart';
 import 'package:tugas_7_flutter_intro/tugas-8/news_page.dart';
 import 'package:tugas_7_flutter_intro/tugas-9/detail_news_app.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Tugas - 7 Counter Apps'),
-      initialRoute: "/quiz2",
+      initialRoute: "/tugas11",
       routes: {
         "/home": (context) => HomePageNew(),
         "/tugas7": (context) => const MyHomePage(title: 'Tugas - 7 Counter Apps'),
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         "/tugas9Detail": (context) => const DetailNewsApp(),
         "/tugas10": (context) => const BottomNavbar(),
         "/quiz2": (context) => const Settings(),
+        "/tugas11": (context) => const UserPage(),
       }
     );
   }
