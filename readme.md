@@ -68,3 +68,32 @@ Jenis-Jenis GridView:
    - Kenapa Named Routes:
      - keterbacaan & pemeliharaan: karena di definisikan secara eksplisit
      - fleksibilitas: mudah untuk mengubah dan memanipulasi nabigasi tanpa mengubah implementasi di banyak bagian
+
+link figma: https://www.figma.com/design/zaQUCp3MsBQm0B7D4VuapK/Sanber?node-id=0-1&t=RCbR1UjKu3CCClIu-1
+
+yag pertama kali
+- Scafold => kerangka kerangka keraja
+- SafeArea => di bawah status bar
+
+almatsurat => PageView(), Carousel
+
+**firebase**
+- npm install -g firebase-tools
+- firebase login => untuk login
+- firebase projects:list => cek semua list project
+- dart pub global activate flutterfire_cli => add ke flutter (cukup sekali)
+- flutterfire configure => configure firbase dengan project flutter (tiap bikin project)
+- flutter pub add firebase_core
+- flutter pub add firebase_auth
+
+=>>> kalo mau restart ulang <<<=
+- delete file firebase.json & firebase_options.dart
+- lalu =>  flutterfire configure
+
+**Get X**
+ => me rebuild 1 widget yg terhubung dengan obx
+1. Reactive State management
+2. 
+- StateManagement
+  - 
+- RouteManagement

@@ -5,7 +5,7 @@
    "version": "0.2.0",
    "configurations": [
       {
-         "name": "tugas_7_flutter_intro",
+         "name": "com.example.tugas_7_flutter_intro",
          "cwd": "tugas_7_flutter_intro",
          "request": "launch",
          "type": "dart"
