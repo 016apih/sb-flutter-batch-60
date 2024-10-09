@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
+import 'package:tugas_7_flutter_intro/tugas-13-getX/list_user_with_getx.dart';
 import 'package:tugas_7_flutter_intro/materi/materialAppScaffold.dart';
 import 'package:tugas_7_flutter_intro/quiz-2/settings.dart';
 import 'package:tugas_7_flutter_intro/tugas-11/list_user.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Tugas - 7 Counter Apps'),
-      initialRoute: "/tugas12",
+      initialRoute: "/tugas13",
       routes: {
         "/home": (context) => HomePageNew(),
         "/tugas7": (context) => const MyHomePage(title: 'Tugas - 7 Counter Apps'),
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         "/quiz2": (context) => const Settings(),
         "/tugas11": (context) => const UserPage(),
         "/tugas12": (context) => const RegisterPage(),
+        "/tugas13": (context) => const UserPageWithGetX(),
       }
     );
   }
