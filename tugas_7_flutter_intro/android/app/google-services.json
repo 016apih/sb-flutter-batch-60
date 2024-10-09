@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332498915207",
+    "project_id": "sb-flutter-batch-60",
+    "storage_bucket": "sb-flutter-batch-60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332498915207:android:3f1d1abbf9dbb34b7c4d22",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbsX0THoZKpY8AmxvoVyabLkfL9vilJMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
