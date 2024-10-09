@@ -48,9 +48,10 @@ class SignInPage extends StatelessWidget {
                   onPressed: () async {
                     try {
                       UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-                        email: "barry.allen@example.com",
-                        password: "SuperSecretPassword!"
+                        email: "test@example.com",
+                        password: "1231"
                       );
+                      print(userCredential);
                     } on FirebaseAuthException catch (e) {
                       if (e.code == 'user-not-found') {
                         print('No user found for that email.');

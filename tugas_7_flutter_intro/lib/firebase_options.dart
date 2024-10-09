@@ -42,17 +42,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyC5KDpgAzIpWTxsyApcr9vJhF3htXqCaXo',
-    appId: '1:332498915207:web:cb768d14783d2f657c4d22',
+    appId: '1:332498915207:web:4e3f62dbe1898a1e7c4d22',
     messagingSenderId: '332498915207',
     projectId: 'sb-flutter-batch-60',
     authDomain: 'sb-flutter-batch-60.firebaseapp.com',
     storageBucket: 'sb-flutter-batch-60.appspot.com',
-    measurementId: 'G-59Y2PJMN05',
+    measurementId: 'G-LD5KV3P569',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCbsX0THoZKpY8AmxvoVyabLkfL9vilJMY',
-    appId: '1:332498915207:android:3f1d1abbf9dbb34b7c4d22',
+    appId: '1:332498915207:android:417af6f8123d92707c4d22',
     messagingSenderId: '332498915207',
     projectId: 'sb-flutter-batch-60',
     storageBucket: 'sb-flutter-batch-60.appspot.com',
@@ -60,29 +60,31 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCU25q6e2sBZ__rU1J-rB9KGGbpYgeqZuE',
-    appId: '1:332498915207:ios:45bafab5a16b724b7c4d22',
+    appId: '1:332498915207:ios:eee05efa0ae461627c4d22',
     messagingSenderId: '332498915207',
     projectId: 'sb-flutter-batch-60',
     storageBucket: 'sb-flutter-batch-60.appspot.com',
+    iosClientId: '332498915207-1g3d9lbcii2av3rvp77n8hepkkriipvp.apps.googleusercontent.com',
     iosBundleId: 'com.example.tugas7FlutterIntro',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyCU25q6e2sBZ__rU1J-rB9KGGbpYgeqZuE',
-    appId: '1:332498915207:ios:45bafab5a16b724b7c4d22',
+    appId: '1:332498915207:ios:eee05efa0ae461627c4d22',
     messagingSenderId: '332498915207',
     projectId: 'sb-flutter-batch-60',
     storageBucket: 'sb-flutter-batch-60.appspot.com',
+    iosClientId: '332498915207-1g3d9lbcii2av3rvp77n8hepkkriipvp.apps.googleusercontent.com',
     iosBundleId: 'com.example.tugas7FlutterIntro',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyC5KDpgAzIpWTxsyApcr9vJhF3htXqCaXo',
-    appId: '1:332498915207:web:853afddfcbe2e2827c4d22',
+    appId: '1:332498915207:web:06e90ab66672aa407c4d22',
     messagingSenderId: '332498915207',
     projectId: 'sb-flutter-batch-60',
     authDomain: 'sb-flutter-batch-60.firebaseapp.com',
     storageBucket: 'sb-flutter-batch-60.appspot.com',
-    measurementId: 'G-WF8ZS53QV9',
+    measurementId: 'G-LTG7VN73FF',
   );
 }
