@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:tugas_7_flutter_intro/routes/app_routes_named.dart';
 import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 import 'package:tugas_7_flutter_intro/theme/app_color.dart';
 import 'package:tugas_7_flutter_intro/tugas-12/custome/custom_text_form_field.dart';
@@ -48,9 +50,10 @@ class SignInPage extends StatelessWidget {
                   onPressed: () async {
                     try {
                       UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-                        email: "test@example.com",
-                        password: "1231"
+                        email: 'test@gmial.com', 
+                        password: '123456'
                       );
+                      Get.toNamed(AppRoutesNamed.tugas10);
                       print(userCredential);
                     } on FirebaseAuthException catch (e) {
                       if (e.code == 'user-not-found') {

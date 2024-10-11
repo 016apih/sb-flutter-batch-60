@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:tugas_7_flutter_intro/quiz-2/settings.dart';
+import 'package:tugas_7_flutter_intro/routes/app_routes_named.dart';
 import 'package:tugas_7_flutter_intro/tugas-9/news_app.dart';
 
 class BottomNavbar extends StatefulWidget {
@@ -15,8 +18,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
 
   final List<Widget> _childresn = [
     const NewsApp(),
-    SearchPage(),
-    ProfilePage()
+    const SearchPage(),
+    const ProfilePage()
   ];
 
   void onTabTapped(int index){
@@ -78,9 +81,10 @@ class ProfilePage extends StatelessWidget {
           const Text("Profile Page"),
           const SizedBox(height: 10),
           ElevatedButton(
-            onPressed: (){
-              Navigator.pushNamed(context, '/tugas8');
-            }, 
+            onPressed: (){ Get.toNamed(AppRoutesNamed.tugas8); },
+            // onPressed: (){
+            //   Navigator.pushNamed(context, '/tugas8');
+            // }, 
             child: const Text(
               'Logout'
             )

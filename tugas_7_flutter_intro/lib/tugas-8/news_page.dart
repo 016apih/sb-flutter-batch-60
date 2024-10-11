@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_7_flutter_intro/routes/app_routes_named.dart';
 import 'package:tugas_7_flutter_intro/theme/app_asset.dart';
 import 'package:tugas_7_flutter_intro/tugas-8/custom/button/custom_button.dart';
 
@@ -40,16 +42,17 @@ class NewsPage extends StatelessWidget{
                 btnColor: Colors.blue,
                 textColor: Colors.white,
                 btnText: "Masuk",
-                onTap: (){
-                  Navigator.pushNamed(context, '/tugas10');
-                },
+                onTap: () { Get.toNamed(AppRoutesNamed.tugas12SigIn); },
+                // onTap: (){
+                //   Navigator.pushNamed(context, '/tugas10');
+                // },
               ),
               const SizedBox(height: 21),
               CustomButton(
                 btnColor: Colors.white,
                 textColor: Colors.blue,
                 btnText: "Mendaftar",
-                onTap: (){},
+                onTap: () => Get.toNamed(AppRoutesNamed.tugas12Register),
               ),
             ],
           ),
