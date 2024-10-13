@@ -77,7 +77,7 @@ yag pertama kali
 
 almatsurat => PageView(), Carousel
 
-**firebase**
+**firebase** => https://www.youtube.com/watch?v=f_O0FSjAWM0&list=PL3vTvg37dBB2CZjmtjMk59DqHidQ_RJDa
 - npm install -g firebase-tools
 - firebase login => untuk login
 - firebase projects:list => cek semua list project
@@ -92,8 +92,21 @@ almatsurat => PageView(), Carousel
 
 **Get X**
  => me rebuild 1 widget yg terhubung dengan obx
-1. Reactive State management
-2. 
-- StateManagement
-  - 
-- RouteManagement
+  - Reactive State management & simple
+  - StateManagement
+  - RouteManagement
+    - Navigator.push() => Get.to(() => pageDua()) | Get.toNamed
+    - Navigator.pop() => Get.back(() => PageTiga())
+    - Navigator.pushReplace => Get.off(() => PageTiga())
+    - Navigator.pushAndRemoveUntil => Get.offAll(() => PageSatu())
+    - argument => Get.argument();
+
+default folder
+- app 
+  - custom
+  - theme
+- controler
+- model
+- pages
+- service
+- widget
