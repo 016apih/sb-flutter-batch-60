@@ -6,5 +6,6 @@ class AppAsset {
   static const authBg = '$imgBase/background_auth.png';
 
   static const icGoogle = '$icBase/ic_google.png';
+  static const icAvatar = '$icBase/ic_avatar.png';
   
 }
