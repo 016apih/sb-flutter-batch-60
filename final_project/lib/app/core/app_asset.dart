@@ -7,5 +7,6 @@ class AppAsset {
 
   static const icGoogle = '$icBase/ic_google.png';
   static const icAvatar = '$icBase/ic_avatar.png';
+  static const icAvatar2 = '$icBase/ic_avatar2.png';
   
 }

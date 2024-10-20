@@ -16,6 +16,8 @@ class AuthLoginView extends GetView<AuthController> {
   
   @override
   Widget build(BuildContext context) {
+    final authC = Get.find<AuthController>();
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -25,32 +27,49 @@ class AuthLoginView extends GetView<AuthController> {
             children: [
               AuthHeader(),
               SizedBox(height: 50),
-              DInput(
+              DInputMix(
                 title: 'Email',
-                label: 'email',
                 hint: 'Email',
-                isRequired: true,
-                radius: BorderRadius.circular(8),
-                style: TextStyle(
-                  color: AppColor.primaryColor
+                boxColor: Colors.white,
+                controller: authC.emailController,
+                boxRadius: 8,
+                boxBorder: Border.all(
+                  width: 2,
+                  color: AppColor.primaryColor,
                 ),
-                controller: TextEditingController()
+                inputOnChanged: (e) => authC.onChangeEmail(e),
               ),
               SizedBox(height: 10),
-              DInputPassword(
-                title: 'Password',
-                label: 'password',
-                hint: 'Password',
-                isRequired: true,
-                radius: BorderRadius.circular(8),
-                controller: TextEditingController()
+              GetBuilder(
+                init: authC,
+                id: 'isObscure',
+                builder: (_) =>
+                  DInputMix(
+                  title: 'Password',
+                  hint: 'Password',
+                  obscure: authC.isObscure,
+                  boxColor: Colors.white,
+                  controller: authC.pwdController,
+                  boxRadius: 8,
+                  boxBorder: Border.all(
+                    width: 2,
+                    color: AppColor.primaryColor,
+                  ),
+                  suffixIcon: IconSpec(
+                    radius: 24,
+                    icon:  authC.isObscure ? Icons.visibility_off : Icons.visibility,
+                    color: AppColor.primaryColor,
+                    onTap: () => authC.onObscure(),
+                  ),
+                  inputOnChanged: (e) => authC.onChangePassword(e),
+                ),
               ),
               SizedBox(height: 30),
               DButtonBorder(
                 mainColor: Colors.white,
                 height: 52,
                 radius: 8,
-                onClick: () {},
+                onClick: () => authC.onLogin(),
                 borderColor: AppColor.primaryColor,
                 child:  const Text(
                   'Masuk', 

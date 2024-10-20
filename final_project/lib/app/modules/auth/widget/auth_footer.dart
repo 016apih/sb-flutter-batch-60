@@ -36,7 +36,7 @@ class AuthFooter extends StatelessWidget {
             ),
             InkWell(
               onTap: (){
-                Get.offAll(() => typeForm == 'daftar' ? AuthLoginView() : AuthRegisterView());
+                Get.to(() => typeForm == 'daftar' ? AuthLoginView() : AuthRegisterView());
               },
               child: Text(
                 typeForm == 'daftar' ? 'masuk ' : 'mendaftar ', 

@@ -8,16 +8,19 @@ import 'package:google_fonts/google_fonts.dart';
 import '../controllers/home_controller.dart';
 
 class HomeDetailView extends GetView<HomeController> {
-  const HomeDetailView({super.key});
+  const HomeDetailView({
+    super.key
+  });
   
   @override
   Widget build(BuildContext context) {
     final homeC = Get.find<HomeController>();
+    final idBook = Get.arguments['idBook'];
 
     return Scaffold(
       // appBar: ,
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
             ClipRRect(
               borderRadius: BorderRadius.only(
@@ -27,7 +30,7 @@ class HomeDetailView extends GetView<HomeController> {
               child: Stack(
                 children: [
                   Image.network(
-                    homeC.books[0].imageUrl,
+                    homeC.books[idBook].imageUrl,
                     width: double.infinity,
                     height: 400,
                     fit: BoxFit.fill,
@@ -62,37 +65,100 @@ class HomeDetailView extends GetView<HomeController> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    homeC.books[0].title,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.roboto(
-                      fontSize: 24,
-                      color: AppColor.titleText,
-                      fontWeight: FontWeight.bold
+                  Center(
+                    child: Text(
+                      homeC.books[idBook].title,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        fontSize: 24,
+                        color: AppColor.titleText,
+                        fontWeight: FontWeight.bold
+                      ),
                     ),
                   ),
-                  SizedBox(height: 5),
-                  Text(
-                    'Penulis: ${homeC.books[0].author}',
-                    style: GoogleFonts.roboto(
-                      fontSize: 14,
-                      color: AppColor.titleText
-                    ),
+                  SizedBox(height: 10),
+                  RichText(
+                    text: TextSpan(
+                      text: 'Penulis : ',
+                      style: GoogleFonts.roboto(
+                        fontSize: 14,
+                        color: AppColor.titleText,
+                        fontWeight: FontWeight.bold
+                      ),
+                      children: [
+                        TextSpan(
+                          text: homeC.books[idBook].author,
+                          style: GoogleFonts.roboto(
+                            fontWeight: FontWeight.normal
+                          ),
+                        )
+                      ]
+                    )
                   ),
-                  Text(
-                    'Penerbit: ${homeC.books[0].releaseYear}',
-                    style: GoogleFonts.roboto(
-                      fontSize: 14,
-                      color: AppColor.titleText,
-                      // fontWeight: FontWeight.bold
-                    ),
-                  )
+                  SizedBox(height: 10),
+                  RichText(
+                    text: TextSpan(
+                      text: 'Tahun Terbit  : ',
+                      style: GoogleFonts.roboto(
+                        fontSize: 14,
+                        color: AppColor.titleText,
+                        fontWeight: FontWeight.bold
+                      ),
+                      children: [
+                        TextSpan(
+                          text: '${homeC.books[idBook].releaseYear}',
+                          style: GoogleFonts.roboto(
+                            fontWeight: FontWeight.normal
+                          ),
+                        )
+                      ]
+                    )
+                  ),
+                  SizedBox(height: 10),
+                  RichText(
+                    text: TextSpan(
+                      text: 'Jumlah Halaman  : ',
+                      style: GoogleFonts.roboto(
+                        fontSize: 14,
+                        color: AppColor.titleText,
+                        fontWeight: FontWeight.bold
+                      ),
+                      children: [
+                        TextSpan(
+                          text: '${homeC.books[idBook].totalPage} (${homeC.books[idBook].thickness})',
+                          style: GoogleFonts.roboto(
+                            fontWeight: FontWeight.normal
+                          ),
+                        )
+                      ]
+                    )
+                  ),
+                  SizedBox(height: 10),
+                  RichText(
+                    text: TextSpan(
+                      text: 'Deskripsi  : ',
+                      style: GoogleFonts.roboto(
+                        fontSize: 14,
+                        color: AppColor.titleText,
+                        fontWeight: FontWeight.bold
+                      ),
+                      children: [
+                        TextSpan(
+                          text: '${homeC.books[idBook].description}',
+                          style: GoogleFonts.roboto(
+                            fontWeight: FontWeight.normal
+                          ),
+                        )
+                      ]
+                    )
+                  ),
                 ],
               ),
             )            
           ],
-        ),
+        )
       )
     );
   }

@@ -54,14 +54,14 @@ class HomeOurBooks extends GetView<HomeController> {
                             padding: EdgeInsets.all(5),
                             child: DButtonShadow(
                               padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                              width: 50,
+                              width: 60,
                               height: 20,
                               mainColor: AppColor.secondaryColor,
                               splashColor: AppColor.secondaryColor,
                               onClick: () => {print('nover')},
                               radius: 10,
                               child: Text(
-                                "Novel",
+                                homeC.books[index].categoryId == 1 ? "Fiksi" : 'Non-Fiksi',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 11
@@ -106,7 +106,9 @@ class HomeOurBooks extends GetView<HomeController> {
                         height: 20,
                         // mainColor: AppColor.secondaryColor,
                         splashColor: Colors.white,
-                        onClick: () => {Get.to(() => HomeDetailView())},
+                        onClick: () => {
+                          Get.to(() => HomeDetailView(), arguments: {'idBook': index})
+                        },
                         radius: 10,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,

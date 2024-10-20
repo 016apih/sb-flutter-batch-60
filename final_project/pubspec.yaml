@@ -40,6 +40,8 @@ dependencies:
   dio: ^5.7.0
   d_button: ^0.0.10
   d_input: ^0.4.2
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
 
 dev_dependencies:
   flutter_test:

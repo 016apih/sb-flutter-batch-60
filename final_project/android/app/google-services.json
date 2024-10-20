@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "332498915207",
+    "project_id": "sb-flutter-batch-60",
+    "storage_bucket": "sb-flutter-batch-60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332498915207:android:417af6f8123d92707c4d22",
+        "android_client_info": {
+          "package_name": "com.example.tugas_7_flutter_intro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332498915207-8tmbahjidi23hpcbhe159sdt8ujre5el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbsX0THoZKpY8AmxvoVyabLkfL9vilJMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332498915207-8tmbahjidi23hpcbhe159sdt8ujre5el.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "332498915207-1g3d9lbcii2av3rvp77n8hepkkriipvp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tugas7FlutterIntro"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332498915207:android:0d4fbe7da075a4947c4d22",
+        "android_client_info": {
+          "package_name": "com.sbflutterfinalproject.final_projec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332498915207-8tmbahjidi23hpcbhe159sdt8ujre5el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbsX0THoZKpY8AmxvoVyabLkfL9vilJMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332498915207-8tmbahjidi23hpcbhe159sdt8ujre5el.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "332498915207-1g3d9lbcii2av3rvp77n8hepkkriipvp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tugas7FlutterIntro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
