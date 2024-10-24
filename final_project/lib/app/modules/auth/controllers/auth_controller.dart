@@ -12,13 +12,15 @@ class AuthController extends GetxController {
 
   final count = 0.obs;
   
-  final TextEditingController emailController = TextEditingController(text: 'a@gmail.com');
-  final TextEditingController pwdController = TextEditingController(text: '1111111');
-  final TextEditingController rePwdController = TextEditingController(text: '');
+  final TextEditingController emailController = TextEditingController(/*text: 'a@gmail.com'*/);
+  final TextEditingController pwdController = TextEditingController(/*text: '1111111'*/);
+  final TextEditingController rePwdController = TextEditingController(/*text: ''*/);
 
   var isObscure = true;
   var reIsObscure = true;
   var token = '';
+  var isLoading = false;
+
   TUser? profile = null;
 
   @override
@@ -61,15 +63,18 @@ class AuthController extends GetxController {
   }
 
   void onLogin() async {
+    isLoading = true;
     final a = await _authService.login(emailController.text, pwdController.text);
     if(a != null){
       TLogin respData = TLogin.fromJson(a);
       profile = TUser.fromJson(respData.data);
       token = respData.token;
-
-      Get.toNamed(Routes.HOME);
+      isLoading = false;
       update(['login']);
+      Get.toNamed(Routes.HOME);
     } else {
+      isLoading = false;
+      update(['login']);
       print('login failed $emailController.text, $pwdController.text');
     }
   }

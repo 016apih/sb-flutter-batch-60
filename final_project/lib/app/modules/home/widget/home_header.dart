@@ -41,13 +41,13 @@ class HomeHeader extends GetView<HomeController> {
                 id: 'login',
                 init: authC,
                 builder: (_) => Text(
-                authC.profile?.username ?? '', 
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
-                ),
-              )
+                  authC.profile?.username ?? '', 
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16
+                  ),
+                )
               ),
             ],
           )

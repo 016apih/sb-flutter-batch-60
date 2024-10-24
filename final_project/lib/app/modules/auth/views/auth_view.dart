@@ -1,10 +1,10 @@
 import 'package:d_button/d_button.dart';
 import 'package:final_project/app/core/app_asset.dart';
 import 'package:final_project/app/core/app_color.dart';
-import 'package:final_project/app/modules/auth/views/auth_login_view.dart';
 import 'package:final_project/app/modules/auth/widget/auth_footer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:final_project/app/routes/app_pages.dart';
 
 import 'package:get/get.dart';
 
@@ -74,7 +74,7 @@ class AuthView extends GetView<AuthController> {
                 mainColor: Colors.white,
                 height: 52,
                 radius: 8,
-                onClick: () => Get.offAll(() => AuthLoginView()),
+                onClick: () => Get.offAllNamed(Routes.AUTHLOGIN),
                 borderColor: AppColor.primaryColor,
                 child:  const Text(
                   'Masuk', 

@@ -71,11 +71,15 @@ class AuthLoginView extends GetView<AuthController> {
                 radius: 8,
                 onClick: () => authC.onLogin(),
                 borderColor: AppColor.primaryColor,
-                child:  const Text(
-                  'Masuk', 
-                  style: TextStyle(
-                    color: AppColor.secondaryColor,
-                    fontWeight: FontWeight.bold
+                child: GetBuilder(
+                  init: authC,
+                  id: 'login',
+                  builder: (_) => Text(
+                    authC.isLoading ? 'Mohon Tunggu' : 'Masuk', 
+                    style: TextStyle(
+                      color: AppColor.secondaryColor,
+                      fontWeight: FontWeight.bold
+                    )
                   )
                 ),
               ),
