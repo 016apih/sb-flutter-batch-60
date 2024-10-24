@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:final_project/app/core/app_color.dart';
-import 'package:final_project/app/modules/auth/views/auth_login_view.dart';
-import 'package:final_project/app/modules/auth/views/auth_register_view.dart';
+import 'package:final_project/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
@@ -36,7 +33,7 @@ class AuthFooter extends StatelessWidget {
             ),
             InkWell(
               onTap: (){
-                Get.to(() => typeForm == 'daftar' ? AuthLoginView() : AuthRegisterView());
+                Get.offAllNamed(typeForm == 'daftar' ? Routes.AUTHLOGIN : Routes.AUTHREGISTER);
               },
               child: Text(
                 typeForm == 'daftar' ? 'masuk ' : 'mendaftar ', 
